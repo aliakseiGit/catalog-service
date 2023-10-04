@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5p [%c{1}:%L] %m%n%throwable"/>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Root level="${env:ROOT_LOG_LEVEL:-DEBUG}">
+      <AppenderRef ref="Console"/>
+    </Root>
+    <logger name="org.springframework" level="${env:SPRING_LOG_LEVEL:-INFO}">
+      <AppenderRef ref="Console"/>
+    </logger>
+    <logger name="org.apache.http" level="${env:APACHE_HTTP_LOG_LEVEL:-INFO}">
+      <AppenderRef ref="Console"/>
+    </logger>
+  </Loggers>
+
+</Configuration>
