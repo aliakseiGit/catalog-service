@@ -6,6 +6,7 @@ the books in the bookshop catalog. It's part of the project built in the
 by [Thomas Vitale](https://www.thomasvitale.com).
 
 ## REST API
+TODO Add something for STG 
 
 | Endpoint	      | Method   | Req. body  | Status | Resp. body     | Description    		   	     |
 |:---------------:|:--------:|:----------:|:------:|:--------------:|:-------------------------------|
